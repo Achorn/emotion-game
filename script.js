@@ -18,6 +18,7 @@ scale();
 
 var ThemeSong = new Audio("assets/audio/sad_music.m4a");
 var kid_laughing_audio = new Audio("assets/audio/kid_laughing.m4a");
+kid_laughing_audio.volume = 0.05;
 
 ThemeSong.loop = true;
 soundButton.addEventListener("click", () => {
@@ -33,7 +34,5 @@ startButton.addEventListener("click", () => {
   ThemeSong.play();
 
   kid_laughing_audio.currentTime = 0;
-  kid_laughing_audio.play();
-  kid_laughing_audio.volume = 0.1;
   kid_laughing_audio.play();
 });
