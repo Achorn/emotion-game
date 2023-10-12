@@ -7,7 +7,7 @@ let volOnIcon = document.getElementById("soundOn");
 window.addEventListener("resize", scale);
 
 function scale() {
-  let size = Math.min(window.innerWidth, window.innerHeight);
+  let size = Math.min(document.body.clientWidth, document.body.clientHeight);
   root.style.setProperty("--size", size + "px");
   // root.style.setProperty("--font_one", size / 30 + "px");
   // root.style.setProperty("--border-thickness", Math.floor(size / 65) + "px");
