@@ -1,0 +1,27 @@
+:root {
+  --bg_color: #9471a2;
+  --ds_color: #684c71;
+  --pr_color: #4a3550;
+  background-color: var(--bg_color);
+  color: var(--pr_color);
+  font-family: futura-pt, sans-serif;
+}
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#screen {
+  background-color: var(--bg_color);
+  /* border: 2px solid #4a3550; */
+  aspect-ratio: 1;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vh;
+  max-height: 100vw;
+}
