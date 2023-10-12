@@ -10,6 +10,7 @@
   --border_thickness: calc(var(--size) / 150);
   color: var(--pr_color);
   font-family: futura-pt, sans-serif;
+  user-select: none;
 
   font-size: var(--font_one);
 }
