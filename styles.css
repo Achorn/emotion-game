@@ -75,10 +75,10 @@ button {
   bottom: 4%;
 }
 #soundOn {
-  display: none;
+  display: inline;
 }
 #soundOff {
-  display: inline;
+  display: none;
 }
 .material-symbols-rounded {
   font-size: calc(var(--icon_size) * 0.7) !important;

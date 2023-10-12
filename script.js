@@ -4,8 +4,9 @@ let height = document.getElementById("height");
 let soundButton = document.getElementById("sound");
 let volOffIcon = document.getElementById("soundOff");
 let volOnIcon = document.getElementById("soundOn");
-window.addEventListener("resize", scale);
+let startButton = document.getElementById("startButton");
 
+window.addEventListener("resize", scale);
 function scale() {
   let size = Math.min(document.body.clientWidth, document.body.clientHeight);
   root.style.setProperty("--size", size + "px");
@@ -15,14 +16,24 @@ function scale() {
 
 scale();
 
-var audio = new Audio("assets/sad_music.m4a");
-audio.loop = true;
-audio.muted = true;
+var ThemeSong = new Audio("assets/audio/sad_music.m4a");
+var kid_laughing_audio = new Audio("assets/audio/kid_laughing.m4a");
+
+ThemeSong.loop = true;
 soundButton.addEventListener("click", () => {
-  audio.play();
-  let muted = audio.muted;
+  let muted = ThemeSong.muted;
   volOffIcon.style.display = muted ? "none" : "inline";
   volOnIcon.style.display = muted ? "inline" : "none";
 
-  audio.muted = !audio.muted;
+  ThemeSong.muted = !ThemeSong.muted;
+});
+
+//startScreen
+startButton.addEventListener("click", () => {
+  ThemeSong.play();
+
+  kid_laughing_audio.currentTime = 0;
+  kid_laughing_audio.play();
+  kid_laughing_audio.volume = 0.1;
+  kid_laughing_audio.play();
 });
