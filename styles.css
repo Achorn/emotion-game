@@ -1,6 +1,6 @@
 :root {
-  --bg_color: #9471a2;
-  --ds_color: #684c71;
+  --bg_color: #9d6fa6;
+  --ds_color: #855c8c;
   --pr_color: #4a3550;
   --size: 100vh;
 
@@ -26,6 +26,8 @@ body {
 }
 
 #screen {
+  background-image: url("/assets//imgs/going_out.jpg");
+  background-size: contain;
   position: relative;
   background-color: var(--bg_color);
   aspect-ratio: 1;
@@ -38,9 +40,9 @@ body {
 
 #text-container {
   display: inline-block;
-  transform: translate(20%, 80%);
+  transform: translate(20%, 160%);
   background-color: var(--bg_color);
-  height: 40%;
+  height: 30%;
   width: 70%;
   border-radius: var(--border-radius);
   border: var(--border_thickness) solid var(--pr_color);
