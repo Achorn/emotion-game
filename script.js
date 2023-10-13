@@ -64,11 +64,11 @@ function startChapter(chapterId) {
 function ShowChapterDescription(chapter) {
   textContainer.innerHTML = "";
   //chapter
-  let chapterNum = document.createElement("h2");
+  let chapterNum = document.createElement("h3");
   chapterNum.innerHTML = `Chapter: ${chapter.id}`;
   textContainer.appendChild(chapterNum);
 
-  let chapterTitle = document.createElement("h1");
+  let chapterTitle = document.createElement("h2");
   chapterTitle.innerHTML = chapter.title;
   textContainer.appendChild(chapterTitle);
   let beginChapterButton = document.createElement("button");

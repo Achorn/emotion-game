@@ -11,7 +11,6 @@
   color: var(--pr_color);
   font-family: futura-pt, sans-serif;
   user-select: none;
-
   font-size: var(--font_one);
 }
 
@@ -36,13 +35,24 @@ body {
   max-width: 100vh;
   max-height: 100vw;
   overflow: hidden;
+  display: flex;
 }
 
+#text-wrapper {
+  position: absolute;
+  /* background-color: rgba(47, 47, 47, 0.125); */
+  height: var(--size);
+  width: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #text-container {
-  display: inline-block;
-  transform: translate(20%, 160%);
+  padding: 4%;
+  display: absolute;
+  /* transform: translate(20%, 160%); */
   background-color: var(--bg_color);
-  height: 30%;
+  /* height: 30%; */
   width: 70%;
   border-radius: var(--border-radius);
   border: var(--border_thickness) solid var(--pr_color);
