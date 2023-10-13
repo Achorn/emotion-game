@@ -36,3 +36,16 @@ startButton.addEventListener("click", () => {
   kid_laughing_audio.currentTime = 0;
   kid_laughing_audio.play();
 });
+
+//chapters
+
+let chapters = {
+  1: { title: "Your Time", content: "" },
+  2: { title: "Going Out", content: "" },
+  3: { title: "A Release", content: "" },
+  4: { title: "Let it In!", content: "" },
+  5: { title: "Let it Out!", content: "" },
+  6: { title: "The Great Outdoors", content: "" },
+  7: { title: "Cut it off", content: "" },
+  8: { title: "A Familiar Feeling", content: "" },
+};
